@@ -1,0 +1,16 @@
+.footer 
+	.container 
+		.footer-top 
+			a.footer-top__logo: img(src="images/Logo-footer.png", alt="")
+			.footer-top__login 
+				p Subscribe to Newslatter
+				.footer-top__login-input
+					input(type="text")
+					button sing in
+			.footer-top__networks 
+				a.telegram.icon-telegram(href="#!") 	
+				a.facebook.icon-facebook(href="#!") 	
+				a.instagram.icon-instagram(href="#!") 	
+		ul.footer__nav 
+			each link, key in ['News','Help','Contact']
+				li.footer__nav__item: a.footer__nav__link(href="#!")=link 

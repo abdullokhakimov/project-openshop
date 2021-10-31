@@ -1,0 +1,6 @@
+.products.container
+  h2.title Computers & Laptop
+  .products__items
+    each item, key in nout
+      +cardItem(key,'noutbook/nout','.png', item.title, item.price)
+  a.btn-dark(href="#!") learn more

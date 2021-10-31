@@ -1,0 +1,16 @@
+.psvr{
+	padding-top: 70px;
+	display: flex;
+	&__content{
+		h3{
+			@include font(48px, 65px, $dark, 600);
+		}
+		p{
+			@include font(24px, 33px);
+			margin: 40px 0 0 40px;
+		}
+		button{
+			margin: 115px 0 0 160px;
+		}
+	}
+}

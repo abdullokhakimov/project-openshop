@@ -1,0 +1,6 @@
+.products.container
+  h2.title Samsung
+  .products__items
+    each item, key in samsung
+      +cardItem(key,'samsung/phone','.png', item.title, item.price)
+  a.btn-dark(href="#!") learn more

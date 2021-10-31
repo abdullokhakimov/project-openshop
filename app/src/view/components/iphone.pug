@@ -1,0 +1,6 @@
+.products.container
+  h2.title Cell Phone
+  .products__items
+    each item, key in iPhone
+      +cardItem(key,'phone/phone','.png', item.title, item.price)
+  a.btn-dark(href="#!") learn more

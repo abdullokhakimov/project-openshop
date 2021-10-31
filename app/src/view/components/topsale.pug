@@ -1,0 +1,6 @@
+.products.container
+  h2.title Computers & Laptop
+  .products__items
+    each item, key in topSale
+      +cardItem(key,'watch/top','.png', item.title, item.price)
+  a.btn-dark(href="#!") learn more

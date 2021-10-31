@@ -1,0 +1,18 @@
+.buyphone.container
+	ul.buyphone__tabs
+		li.buyphone__tabs__img.active: img(src="images/single-tabs/tab1.png", alt="")
+		li.buyphone__tabs__img: img(src="images/single-tabs/tab2.png", alt="")
+		li.buyphone__tabs__img: img(src="images/single-tabs/tab3.png", alt="")
+	.buyphone__main-img 
+		img(src="images/single-tabs/tab1.png", alt="")
+	.buyphone__content
+		h2.buyphone__content__title Apple iPhone 12 Pro Max 128GB (Gray)
+		p.buyphone__content__price 1300$
+		.buyphone__content__kharacter 
+			h3 Product Highlights
+			ul 
+				each stroke, key in ['128 GB ROM','13.72 cm (5.4 inch) Super Retina XDR Display','12MP + 12MP | 12MP Front Camera','A14 Bionic Chip with Next Generation Neural Engine Processor','Ceramic Shield','IP68 Water Resistance','All Screen OLED Display','The shipment for this product will begin from 14th November 2020']
+					li=stroke
+		.buyphone__content__buttons 
+			button.buyphone__content__cart.icon-cart CART
+			button.buyphone__content__buynow BUY NOW

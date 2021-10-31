@@ -1,0 +1,8 @@
+header.slider.container
+  .slider__items
+    -for(var i = 1; i <= 3; i++)
+      .slider__items--slide.slide
+        .slide__img: img(src="images/slide"+i+".png", alt="")
+        .slide__content
+          h2 Color your days with small joy
+          a.btn-dark(href="#!") SHOP NOW

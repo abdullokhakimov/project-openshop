@@ -1,0 +1,35 @@
+.navbar.container
+  a.navbar__logo(href="/"): img(src="images/Logo.png", alt="")
+  form.navbar__search(action="")
+    input(type="text" placeholder="What are you looking for?")
+    button.navbar__search--btn.icon-search SEARCH OUR STORE
+  button.navbar__btn: span
+  .navbar__nav
+    ul.navbar__nav--bottom.nav-bottom
+      each link, key in ['Cell Phones & Tablets','Computers & Laptop','TV & Video','Asseccories','Home appliance','Video Games & Consoles']
+        if(key <= 0)
+          li
+            a(href="page-phone.html")=link
+            .nav-bottom__hover
+              .nav-bottom__hover--list
+                h5 Cell Phones       
+                ul
+                  each linkHover in ['Xiaomi','Apple','Samsung','Huawei','BQ','Nokia' ,'Inoi','Vivo']
+                    li: a(href="#!")=linkHover 
+              .nav-bottom__hover--list
+                h5 Cell Phones       
+                ul
+                  each linkHover in ['Xiaomi','Apple','Samsung','Huawei','BQ','More...']
+                    li: a(href="#!")=linkHover 
+        else
+          li: a(href="#!")=link 
+    .navbar__nav--top
+      .container.nav-top
+        .language
+          .language__lan.icon-chevrone English
+          .language__second
+            a(href="#!") English
+            a(href="#!") Russian
+        a.phone.icon-phone(href="#!") (907) 555-0101
+        a.user.icon-user(href="#!") Sing in
+        a.cart.icon-cart(href="#!") Cart
