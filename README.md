@@ -90,6 +90,8 @@ gulp build
 ---
 
 ## 🖼️ Screenshots
+![Screenshot 1](app/src/images/Screenshot1.png)
+![Screenshot 2](app/src/images/Screenshot2.png)
 
 ---
 
